@@ -98,4 +98,4 @@ func main() {
 }
  ```
 
-[image](https://github.com/Byzgaev-I/GO-Functions-and-working-with-files-/blob/main/Снимок%20экрана%202025-09-06%20в%2017.26.53.png)
+![image](https://github.com/Byzgaev-I/GO-Functions-and-working-with-files-/blob/main/Снимок%20экрана%202025-09-06%20в%2017.26.53.png)
