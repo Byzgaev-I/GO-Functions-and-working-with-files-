@@ -70,6 +70,7 @@ go-file-processor/
 return fmt.Errorf("ошибка чтения файла %s: %w", inputPath, err)
 ```
 
+## Локальная версия кода 
 
  ```go
 package main
