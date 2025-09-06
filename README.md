@@ -27,7 +27,7 @@ process func(string) (string, error),
 
 [Cсылка на песочницу](https://go.dev/play/p/NR96ETw_8Kn)
 
- Базовое использование  
+### Базовое использование  
  
  ```go
 err := ReadProcessWrite("input.txt", "output.txt", toUpperWrapper)
