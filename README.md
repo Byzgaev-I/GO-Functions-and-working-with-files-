@@ -97,3 +97,5 @@ func main() {
 	demonstrateErrors()
 }
  ```
+
+[image](
