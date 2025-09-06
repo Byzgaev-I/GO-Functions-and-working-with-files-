@@ -56,13 +56,13 @@ customProcessor := func(text string) (string, error) {
 
 ### Структура проекта
 
-go-file-processor/
-├── go.mod              # Go модуль
-├── main.go             # Основной файл с функцией ReadProcessWrite
-├── input.txt           # Тестовый входной файл
-├── output.txt          # Результат обработки (создается автоматически)
-└── README.md           # Документация
-
+go-file-processor/  
+├── go.mod              # Go модуль  
+├── main.go             # Основной файл с функцией ReadProcessWrite   
+├── input.txt           # Тестовый входной файл  
+├── output.txt          # Результат обработки (создается автоматически)  
+└── README.md           # Документация  
+  
 ## Технические детали
 ### Все ошибки оборачиваются с контекстной информацией:
 
