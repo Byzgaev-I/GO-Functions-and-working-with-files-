@@ -14,4 +14,4 @@ process func(string) (string, error),
 
 ## Выполнение домашнего задания
 
-[Cсылка на песочницу](https://go.dev/play/)
+[Cсылка на песочницу](https://go.dev/play/p/NR96ETw_8Kn)
