@@ -27,6 +27,46 @@ process func(string) (string, error),
 
 [Cсылка на песочницу](https://go.dev/play/p/NR96ETw_8Kn)
 
+ Базовое использование  
+ 
+ ```go
+err := ReadProcessWrite("input.txt", "output.txt", toUpperWrapper)
+if err != nil {
+    log.Printf("Ошибка: %v", err)
+}
+```
+Преобразование в верхний регистр
+```go
+func toUpperWrapper(text string) (string, error) {
+    return strings.ToUpper(text), nil
+}
+```
+
+Обработка с возможной ошибкой
+```go
+customProcessor := func(text string) (string, error) {
+    if len(text) == 0 {
+        return "", fmt.Errorf("пустой текст")
+    }
+    return strings.ReplaceAll(text, "Go", "Golang"), nil
+}
+```
+
+Структура проекта
+go-file-processor/
+├── go.mod              # Go модуль
+├── main.go             # Основной файл с функцией ReadProcessWrite
+├── input.txt           # Тестовый входной файл
+├── output.txt          # Результат обработки (создается автоматически)
+└── README.md           # Документация
+
+Технические детали
+Все ошибки оборачиваются с контекстной информацией:
+```go
+return fmt.Errorf("ошибка чтения файла %s: %w", inputPath, err)
+```
+
+
  ```go
 package main
 
