@@ -35,14 +35,16 @@ if err != nil {
     log.Printf("Ошибка: %v", err)
 }
 ```
-Преобразование в верхний регистр
+### Преобразование в верхний регистр
+
 ```go
 func toUpperWrapper(text string) (string, error) {
     return strings.ToUpper(text), nil
 }
 ```
 
-Обработка с возможной ошибкой
+### Обработка с возможной ошибкой
+
 ```go
 customProcessor := func(text string) (string, error) {
     if len(text) == 0 {
@@ -52,7 +54,8 @@ customProcessor := func(text string) (string, error) {
 }
 ```
 
-Структура проекта
+### Структура проекта
+
 go-file-processor/
 ├── go.mod              # Go модуль
 ├── main.go             # Основной файл с функцией ReadProcessWrite
@@ -60,8 +63,9 @@ go-file-processor/
 ├── output.txt          # Результат обработки (создается автоматически)
 └── README.md           # Документация
 
-Технические детали
-Все ошибки оборачиваются с контекстной информацией:
+## Технические детали
+### Все ошибки оборачиваются с контекстной информацией:
+
 ```go
 return fmt.Errorf("ошибка чтения файла %s: %w", inputPath, err)
 ```
